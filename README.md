@@ -198,17 +198,48 @@ Training time: approximately 2–4 hours on Apple M2 hardware.
 
 ---
 
-## Example Outputs
+## Example Run
 
-```
-Prompt: The meaning of life is
-Output: The meaning of life is found not in what we possess but in what we choose to become.
+<details>
+<summary>Click to view full training and generation output</summary>
 
-Prompt: Once upon a time
-Output: Once upon a time there was a child who dreamed of building a world of his own words.
-```
+```bash
+# Activate virtual environment
+source /Users/sarthakgoyal/Documents/tiny-llm/.venv/bin/activate
 
----
+# Train the model
+(.venv) sarthakgoyal@Sarthak tiny-llm % python train.py
+Epoch 1/3: 100%|██████████████████████████████████████████████████████████████████| 12631/12631 [3:03:26<00:00, 1.15it/s, loss=0.0935]
+Epoch 2/3: 100%|██████████████████████████████████████████████████████████████████| 12631/12631 [3:03:40<00:00, 1.15it/s, loss=0.0618]
+Epoch 3/3: 100%|██████████████████████████████████████████████████████████████████| 12631/12631 [3:09:26<00:00, 1.11it/s, loss=0.0698]
+Model training complete! Saved as checkpoint.pt
+
+# Generate text
+(.venv) sarthakgoyal@Sarthak tiny-llm % python generate.py
+Model loaded! Ready to generate.
+
+Enter a prompt: The quick brown fox
+
+Generated text:
+-----------------------------------
+The quick brown fox was scared and started to cry. The bear ran away. Even though the bear had taken the snow he had not had a great day after all.  ⁇ endoftext ⁇  Molly and her mom were sitting outside in the sun. It was Wednesday and they were enjoying their healthy snack.  ⁇ Look what I made, ⁇  said mom. Molly looked over
+-----------------------------------
+
+You: I am a boy
+tinyLLM: I am a boy named Timmy. Now, he could use some help. Now, he did. He looked back and saw a big green frog with big eyes. The frog saw the squirrel was lost, so it jumped to the squirrel ⁇ s aid. The frog saw the squirrel needed help to find its way home, so it supplied a few friendly hops and jumps to show
+
+You: story time
+tinyLLM: story time to go home. ⁇  The two friends started to playing the weapon. They ran and jumped and rolled on the grass. Ben watched them from the tree. He felt lonely and sad. Then, something bad happened. The dog saw a squirrel. The dog wanted to catch the squirrel. The dog ran after the squirrel. The dog forgot about Lily. The dog pull
+
+You: green
+tinyLLM: green park with her family. She, curious and excited to explore the unknown. As she looked down at her staff and hopped back and forth, planting each flower with a big splash. In the end, the little girl ⁇ s mama was very proud of her daughter, and she thanked her for all the hard work. The little girl smiled, knowing that she had done
+
+You: red ball
+tinyLLM: red balloon. That made it easy to pass.  ⁇ oe quickly grabbed the handle and passed the balloon to his friend. His friend was so happy and they played with the balloon until the sun went down!  ⁇ endoftext ⁇  Once upon a time, there was a light that shone in the darkness. One night, something very sad happened. The light became miserable and wasn ⁇ t so bright
+
+You: safe
+tinyLLM: safe. He was so excited to have done something so special and was looking forward to doing it again!  ⁇ endoftext ⁇  It was a hot summer day. Lucy and her mom were out in the yard. Lucy ⁇ s mom was gardening and Lucy was playing with a ball. Suddenly, Lucy ⁇ s ball rolled towards the house and stop
+</details> ```
 
 ## Future Work
 
