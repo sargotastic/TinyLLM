@@ -201,7 +201,6 @@ Training time: approximately 2–4 hours on Apple M2 hardware.
 ## Example Run
 
 <details>
-<summary>Click to view full training and generation output</summary>
 
 ```bash
 # Activate virtual environment
@@ -239,7 +238,7 @@ tinyLLM: red balloon. That made it easy to pass.  ⁇ oe quickly grabbed the han
 
 You: safe
 tinyLLM: safe. He was so excited to have done something so special and was looking forward to doing it again!  ⁇ endoftext ⁇  It was a hot summer day. Lucy and her mom were out in the yard. Lucy ⁇ s mom was gardening and Lucy was playing with a ball. Suddenly, Lucy ⁇ s ball rolled towards the house and stop
-</details> ```
+```
 
 ## Future Work
 
