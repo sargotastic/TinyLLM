@@ -200,8 +200,6 @@ Training time: approximately 2–4 hours on Apple M2 hardware.
 
 ## Example Run
 
-<details>
-
 ```bash
 # Activate virtual environment
 source /Users/sarthakgoyal/Documents/tiny-llm/.venv/bin/activate
